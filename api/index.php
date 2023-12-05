@@ -15,7 +15,7 @@ $app = AppFactory::create();
 
 // Add error middleware
 $app->addErrorMiddleware(true, true, true);
-
+$app->setBasePath("api");
 // Add parse body
 $app->addBodyParsingMiddleware();
 
